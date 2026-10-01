@@ -1,0 +1,86 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 { font-size: 2rem; margin-bottom: 1rem; }
+h2 { font-size: 1.3rem; margin: 2rem 0 1rem; color: #aaa; }
+p  { margin-bottom: 1rem; color: #ccc; }
+
+a { color: #6cf; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Top nav on every page */
+nav {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+nav a {
+  margin-right: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Tiles (used on home + work hub) */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.tile {
+  display: block;
+  padding: 2rem 1.5rem;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+.tile:hover {
+  background: #262626;
+  border-color: #6cf;
+  text-decoration: none;
+}
+
+/* Gallery */
+/* Gallery — one item per row */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.gallery .item {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.gallery img,
+.gallery video {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+/* Vertical videos — narrower and centered */
+.gallery .item--vertical {
+  max-width: 400px;
+}
+
+.item figcaption {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 0.5rem;
+  text-align: center;
+}
