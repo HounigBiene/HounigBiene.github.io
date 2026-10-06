@@ -2,8 +2,8 @@
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
-  background: #111;
-  color: #eee;
+  background: #ffffff;
+  color: #707596;
   line-height: 1.6;
   padding: 2rem;
   max-width: 1000px;
@@ -11,17 +11,26 @@ body {
 }
 
 h1 { font-size: 2rem; margin-bottom: 1rem; }
-h2 { font-size: 1.3rem; margin: 2rem 0 1rem; color: #aaa; }
-p  { margin-bottom: 1rem; color: #ccc; }
+h2 { font-size: 1.3rem; margin: 2rem 0 1rem; color: #9c9b9e; }
+p  { margin-bottom: 1rem; color: #707596; }
 
-a { color: #6cf; text-decoration: none; }
+/* hand drawn titles */
+.page-title {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+a { color: rgb(92, 96, 133); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* Top nav on every page */
 nav {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #707596;
 }
 nav a {
   margin-right: 1.5rem;
@@ -38,16 +47,16 @@ nav a {
 .tile {
   display: block;
   padding: 2rem 1.5rem;
-  background: #1c1c1c;
-  border: 1px solid #333;
+  background: #f5f4ff;
+  border: 1px solid #ffffff;
   border-radius: 8px;
   text-align: center;
   font-size: 1.1rem;
   transition: background 0.2s, border-color 0.2s;
 }
 .tile:hover {
-  background: #262626;
-  border-color: #6cf;
+  background: #f0ebff;
+  border-color: #f0ebff;
   text-decoration: none;
 }
 
